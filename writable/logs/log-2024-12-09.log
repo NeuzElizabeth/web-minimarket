@@ -1,0 +1,30 @@
+INFO - 2024-12-09 22:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 22:58:41 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 22:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 22:59:15 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 22:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 22:59:55 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:00:04 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:00:09 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:00:17 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:01:14 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:01:48 --> Estado inicial de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+DEBUG - 2024-12-09 23:01:48 --> Layout - Estado de sesión: {"session_id":"rb01v68tdbdt38uqen5g95regfu0h2fk","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:05:02 --> Layout - Estado de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:05:14 --> Layout - Estado de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:05:16 --> Layout - Estado de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:05:17 --> Layout - Estado de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-09 23:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 23:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-09 23:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-09 23:05:25 --> Estado inicial de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}
+DEBUG - 2024-12-09 23:05:25 --> Layout - Estado de sesión: {"session_id":"c3fpjffcbo1t6ns5ckbpobr7c27ek5mj","cliente_id":null,"isClienteLoggedIn":null}

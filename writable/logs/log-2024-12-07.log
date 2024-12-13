@@ -1,0 +1,377 @@
+INFO - 2024-12-07 15:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 15:53:38 --> Error connecting to the database: mysqli_sql_exception: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('82.197.82.121', 'u378336868_paf', 'q$|VAL1K', 'u378336868_paf', 3306, '', 0)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#6 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#7 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#8 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#9 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#5 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#6 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#7 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#8 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-07 15:53:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `producto`
+WHERE `destacado` = :destacado:
+AND `is_active` = :is_active:
+ LIMIT 8', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+ 5 APPPATH\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tienda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-07 15:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 15:53:49 --> Error connecting to the database: mysqli_sql_exception: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('82.197.82.121', 'u378336868_paf', 'q$|VAL1K', 'u378336868_paf', 3306, '', 0)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#6 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#7 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#8 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#9 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#5 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#6 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#7 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#8 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-07 15:53:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `producto`
+WHERE `destacado` = :destacado:
+AND `is_active` = :is_active:
+ LIMIT 8', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+ 5 APPPATH\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tienda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-07 15:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 15:54:44 --> Error connecting to the database: mysqli_sql_exception: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('82.197.82.121', 'u378336868_paf', 'q$|VAL1K', 'u378336868_paf', 3306, '', 0)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#6 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#7 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#8 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#9 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\paf\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\paf\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\paf\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+#5 C:\laragon\www\paf\app\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+#6 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Tienda->index()
+#7 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+#8 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-07 15:54:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `producto`
+WHERE `destacado` = :destacado:
+AND `is_active` = :is_active:
+ LIMIT 8', [...], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(8, 0)
+ 5 APPPATH\Controllers\Tienda.php(34): CodeIgniter\BaseModel->findAll(8)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Tienda->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tienda))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-07 15:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 15:59:56 --> Layout - Estado de sesión: {"session_id":"0ebn52g91ccrm78soe1j233fij2f0plm","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:00:13 --> Layout - Estado de sesión: {"session_id":"0ebn52g91ccrm78soe1j233fij2f0plm","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:00:27 --> Layout - Estado de sesión: {"session_id":"0ebn52g91ccrm78soe1j233fij2f0plm","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:05:02 --> Layout - Estado de sesión: {"session_id":"2e0ott5j1b4eunbbbthdug413vog6q5o","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:05:12 --> Layout - Estado de sesión: {"session_id":"2e0ott5j1b4eunbbbthdug413vog6q5o","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:05:56 --> Layout - Estado de sesión: {"session_id":"2e0ott5j1b4eunbbbthdug413vog6q5o","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:06:18 --> Layout - Estado de sesión: {"session_id":"2e0ott5j1b4eunbbbthdug413vog6q5o","cliente_id":null,"isClienteLoggedIn":null}
+INFO - 2024-12-07 16:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 16:07:16 --> mysqli_sql_exception: Duplicate entry '77349472' for key 'uk_usuario_dni' in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\paf\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\paf\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\paf\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\paf\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\paf\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\paf\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\paf\app\Controllers\Login.php(56): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Login->create()
+#10 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-07 16:07:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '77349472' for key 'uk_usuario_dni'
+[Method: POST, Route: admin/login/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 16:07:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '77349472' for key 'uk_usuario_dni'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$PiyV4jQ.PlzWQ2cAMLzVyuEoSXZVyIEWpNZ0HJDPontOKjt8L27HC\', \'cliente\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$PiyV4jQ.PlzWQ2cAMLzVyuEoSXZVyIEWpNZ0HJDPontOKjt8L27HC\', \'cliente\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 16:07:16 --> [Caused by] mysqli_sql_exception: Duplicate entry '77349472' for key 'uk_usuario_dni'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$PiyV4jQ.PlzWQ2cAMLzVyuEoSXZVyIEWpNZ0HJDPontOKjt8L27HC\', \'cliente\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$PiyV4jQ.PlzWQ2cAMLzVyuEoSXZVyIEWpNZ0HJDPontOKjt8L27HC\', \'cliente\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$PiyV4jQ.PlzWQ2cAMLzVyuEoSXZVyIEWpNZ0HJDPontOKjt8L27HC\', \'cliente\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-07 16:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-12-07 16:09:06 --> mysqli_sql_exception: Duplicate entry '77349472' for key 'uk_usuario_dni' in C:\laragon\www\paf\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\paf\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\paf\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\paf\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\paf\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\paf\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\paf\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\paf\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\paf\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\paf\app\Controllers\Login.php(56): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\paf\system\CodeIgniter.php(933): App\Controllers\Login->create()
+#10 C:\laragon\www\paf\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 C:\laragon\www\paf\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\paf\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\paf\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\paf\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-07 16:09:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '77349472' for key 'uk_usuario_dni'
+[Method: POST, Route: admin/login/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 16:09:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '77349472' for key 'uk_usuario_dni'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$Rw2cE1p4CMHxYfR7ZLlCD.ipikqt3fBYFPWlkI8nYT26K1YOR3pyC\', \'cliente\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$Rw2cE1p4CMHxYfR7ZLlCD.ipikqt3fBYFPWlkI8nYT26K1YOR3pyC\', \'cliente\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-07 16:09:06 --> [Caused by] mysqli_sql_exception: Duplicate entry '77349472' for key 'uk_usuario_dni'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$Rw2cE1p4CMHxYfR7ZLlCD.ipikqt3fBYFPWlkI8nYT26K1YOR3pyC\', \'cliente\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$Rw2cE1p4CMHxYfR7ZLlCD.ipikqt3fBYFPWlkI8nYT26K1YOR3pyC\', \'cliente\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (\'admin\', \'admin\', \'admin@example.com\', \'123456789\', \'77349472\', \'$2y$10$Rw2cE1p4CMHxYfR7ZLlCD.ipikqt3fBYFPWlkI8nYT26K1YOR3pyC\', \'cliente\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `email`, `telefono`, `dni`, `contraseña`, `tipo_usuario`) VALUES (:nombre:, :apellido:, :email:, :telefono:, :dni:, :contraseña:, :tipo_usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Login.php(56): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->create()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-07 16:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-07 16:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:13:07 --> SQL Venta: 
+                SELECT 
+                    dv.*,
+                    p.nombre as producto_nombre,
+                    p.codigo_barras,
+                    p.descripcion as producto_descripcion,
+                    c.nombre as categoria_nombre
+                FROM detalle_venta dv
+                JOIN producto p ON dv.id_producto = p.id_producto
+                JOIN categoria c ON p.id_categoria = c.id_categoria
+                WHERE dv.id_venta = '4'
+            
+DEBUG - 2024-12-07 16:13:07 --> Datos Venta: {"id_venta":"4","id_cliente":"1","id_usuario":"2","metodo_pago_id":"2","fecha_venta":"2024-12-06 22:05:55","tipo_comprobante":"boleta","numero_comprobante":"B-00000004","total":"10.50","estado":"completada","estado_pago":"pagado","referencia_pago":"EFECTIVO-10.5","direccion_envio":null,"costo_envio":"0.00","notas":null,"cliente_nombre":"Reiciendis corporis ","cliente_apellido":"Quia voluptatem Nul","cliente_dni":"Cumque qui facilis d","cliente_telefono":"Nostrum voluptate nu","cliente_email":"tafizynob@mailinator.com","cliente_direccion":null,"usuario_nombre":"Julio ","usuario_apellido":"Ramirez ","usuario_email":"theluzersencamino@gmail.com"}
+DEBUG - 2024-12-07 16:13:07 --> SQL Detalles: 
+                SELECT 
+                    dv.*,
+                    p.nombre as producto_nombre,
+                    p.codigo_barras,
+                    p.descripcion as producto_descripcion,
+                    c.nombre as categoria_nombre
+                FROM detalle_venta dv
+                JOIN producto p ON dv.id_producto = p.id_producto
+                JOIN categoria c ON p.id_categoria = c.id_categoria
+                WHERE dv.id_venta = '4'
+            
+DEBUG - 2024-12-07 16:13:07 --> Datos Detalles: [{"id_detalle_venta":"4","id_venta":"4","id_producto":"3","cantidad":"3","precio_unitario":"3.50","subtotal":"10.50","producto_nombre":"Queso Cheddar","codigo_barras":"1234567890124","producto_descripcion":"Queso cheddar madurado.","categoria_nombre":"Bebidas"}]
+INFO - 2024-12-07 16:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-07 16:13:12 --> SQL Venta: 
+                SELECT 
+                    dv.*,
+                    p.nombre as producto_nombre,
+                    p.codigo_barras,
+                    p.descripcion as producto_descripcion,
+                    c.nombre as categoria_nombre
+                FROM detalle_venta dv
+                JOIN producto p ON dv.id_producto = p.id_producto
+                JOIN categoria c ON p.id_categoria = c.id_categoria
+                WHERE dv.id_venta = '4'
+            
+DEBUG - 2024-12-07 16:13:12 --> Datos Venta: {"id_venta":"4","id_cliente":"1","id_usuario":"2","metodo_pago_id":"2","fecha_venta":"2024-12-06 22:05:55","tipo_comprobante":"boleta","numero_comprobante":"B-00000004","total":"10.50","estado":"completada","estado_pago":"pagado","referencia_pago":"EFECTIVO-10.5","direccion_envio":null,"costo_envio":"0.00","notas":null,"cliente_nombre":"Reiciendis corporis ","cliente_apellido":"Quia voluptatem Nul","cliente_dni":"Cumque qui facilis d","cliente_telefono":"Nostrum voluptate nu","cliente_email":"tafizynob@mailinator.com","cliente_direccion":null,"usuario_nombre":"Julio ","usuario_apellido":"Ramirez ","usuario_email":"theluzersencamino@gmail.com"}
+DEBUG - 2024-12-07 16:13:12 --> SQL Detalles: 
+                SELECT 
+                    dv.*,
+                    p.nombre as producto_nombre,
+                    p.codigo_barras,
+                    p.descripcion as producto_descripcion,
+                    c.nombre as categoria_nombre
+                FROM detalle_venta dv
+                JOIN producto p ON dv.id_producto = p.id_producto
+                JOIN categoria c ON p.id_categoria = c.id_categoria
+                WHERE dv.id_venta = '4'
+            
+DEBUG - 2024-12-07 16:13:12 --> Datos Detalles: [{"id_detalle_venta":"4","id_venta":"4","id_producto":"3","cantidad":"3","precio_unitario":"3.50","subtotal":"10.50","producto_nombre":"Queso Cheddar","codigo_barras":"1234567890124","producto_descripcion":"Queso cheddar madurado.","categoria_nombre":"Bebidas"}]
